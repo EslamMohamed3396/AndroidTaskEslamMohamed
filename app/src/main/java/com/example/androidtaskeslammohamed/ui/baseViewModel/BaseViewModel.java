@@ -1,13 +1,11 @@
 package com.example.androidtaskeslammohamed.ui.baseViewModel;
 
-import android.content.Context;
 import android.util.Log;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.androidtaskeslammohamed.utilits.ProgressDialog;
 import com.example.androidtaskeslammohamed.api.Network.networkCallBack.ICallBackNetwork;
 import com.example.androidtaskeslammohamed.api.client.mapsApi.ApiClientMaps;
 

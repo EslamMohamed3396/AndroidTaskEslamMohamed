@@ -1,4 +1,4 @@
-package com.example.androidtaskeslammohamed.utilits;
+package com.example.androidtaskeslammohamed.utilits.utilits;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

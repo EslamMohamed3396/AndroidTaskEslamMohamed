@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,11 +33,10 @@ import com.example.androidtaskeslammohamed.ui.adapter.destnationLocation.Destnat
 import com.example.androidtaskeslammohamed.ui.adapter.destnationLocation.DestnationLocationClicked;
 import com.example.androidtaskeslammohamed.ui.adapter.sourceLocation.SourceLocationAdapter;
 import com.example.androidtaskeslammohamed.ui.adapter.sourceLocation.SourceLocationClicked;
-import com.example.androidtaskeslammohamed.utilits.Utilis;
 import com.example.androidtaskeslammohamed.utilits.application.App;
 import com.example.androidtaskeslammohamed.utilits.constants.Constants;
 import com.example.androidtaskeslammohamed.utilits.helperFunction.HelperFunctions;
-import com.google.android.gms.common.api.Status;
+import com.example.androidtaskeslammohamed.utilits.utilits.Utilis;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -50,6 +48,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
 import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements
@@ -147,10 +146,10 @@ public class MapsActivity extends FragmentActivity implements
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_setting_menu:
-                Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+                Utilis.toastMessage("Settings");
                 break;
             case R.id.action_logout:
-                Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show();
+                Utilis.toastMessage("Logout");
                 break;
         }
         return false;

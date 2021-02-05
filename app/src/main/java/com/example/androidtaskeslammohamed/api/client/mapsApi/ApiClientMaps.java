@@ -1,15 +1,14 @@
 package com.example.androidtaskeslammohamed.api.client.mapsApi;
 
 import android.app.ProgressDialog;
-import android.widget.Toast;
 
 import com.example.androidtaskeslammohamed.R;
 import com.example.androidtaskeslammohamed.api.Network.networkCallBack.ICallBackNetwork;
 import com.example.androidtaskeslammohamed.api.services.ApiServices;
 import com.example.androidtaskeslammohamed.model.findPlace.response.ResponseFindPlaces;
-import com.example.androidtaskeslammohamed.utilits.Utilis;
 import com.example.androidtaskeslammohamed.utilits.application.App;
 import com.example.androidtaskeslammohamed.utilits.constants.Constants;
+import com.example.androidtaskeslammohamed.utilits.utilits.Utilis;
 
 import java.util.concurrent.TimeUnit;
 
@@ -30,7 +29,7 @@ public class ApiClientMaps {
     private static final String TAG = "ApiClient";
     private static ApiClientMaps SINSTANCE;
     private static OkHttpClient.Builder sBuilder;
-    private ApiServices apiService;
+    private final ApiServices apiService;
     private ProgressDialog progressDialog;
 
     private ApiClientMaps() {
@@ -105,7 +104,7 @@ public class ApiClientMaps {
                         }
                     });
         } else {
-            Toast.makeText(App.getAppContext(), App.getAppContext().getResources().getString(R.string.no_network), Toast.LENGTH_LONG).show();
+            Utilis.toastMessage(App.getAppContext().getResources().getString(R.string.no_network));
         }
     }
 
