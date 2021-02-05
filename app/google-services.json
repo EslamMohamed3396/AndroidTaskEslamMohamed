@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "436573405190",
+    "project_id": "androidtaskeslammohamed",
+    "storage_bucket": "androidtaskeslammohamed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436573405190:android:9eba2893d4979e097bc387",
+        "android_client_info": {
+          "package_name": "com.example.androidtaskeslammohamed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436573405190-t0rpto85fashub6psituu962bpraik9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcUf3vKM8yP9Ph4D_HmFPe3yZVEvALgVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436573405190-t0rpto85fashub6psituu962bpraik9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

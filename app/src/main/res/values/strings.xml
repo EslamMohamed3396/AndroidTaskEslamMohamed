@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AndroidTaskEslamMohamed</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="your_location">Your Location</string>
+    <string name="destination">Destination</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="gps_required">GPS is required for this app to work. Please enable GPS.</string>
+    <string name="yes">Yes</string>
+    <string name="loc_permission">Location Permission</string>
+    <string name="permission">GPS Permissions</string>
+    <string name="no_network">No internet Connection</string>
+
+</resources>
